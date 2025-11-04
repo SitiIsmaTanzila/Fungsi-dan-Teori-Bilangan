@@ -1,0 +1,26 @@
+a. Fungsi Linear
+# f(x) = 2x + 3
+
+def f_linear(x):
+    return 2*x + 3
+
+for i in range(6):
+    print (f"x = {i}, f(x) = {f_linear(i)}") 
+
+b. Fungsi Kuadrat
+#f(x) = x^2 + 2x + 1
+
+def f_kuadrat(x):
+    return x**2 + 2*x + 1
+
+for i in range(6):
+    print(f"(x) = {i}, f(x) = {f_kuadrat(i) }") 
+
+c. Fungsi Pangkat 3 (Kubik) 
+#f(x) = x^3 - 3x^2 + 2
+
+def f_kubik(x):
+    return x*3 - 3*x*2 + 2
+
+for i in range(6):
+   print(f"x = {i], f(x) = {f_kubik(i) }")
