@@ -1,0 +1,15 @@
+#tanpa_numpy
+#f(x) = 3*x**2 + 2*x + 1
+def f(x) :
+    return 3*x**2 + 2*x + 1
+
+x_fungsi = [0, 1, 2, 3, 4]
+fungsi = [f(x) for x in x_fungsi]
+print(fungsi) 
+
+#menggunakan numpy
+#f(x) = 3*x**2 + 2*x + 1
+import. numpy as np
+x = np. array ([0, 1, 2, 3, 4]) 
+y=3*x**2 + 2*x + 1
+print (y)
