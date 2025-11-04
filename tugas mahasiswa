@@ -1,0 +1,63 @@
+#Modifikasi fungsi Fibonacci agar hasilnya disimpan dalam list dan ditampilkan sekaligus.
+def fibonacci(n):
+    if n <= 1:
+       return n
+    else:
+       return fibonacci(n-1) + fibonacci(n-2)
+
+ n = int(input("Masukkan jumlah suku: "))
+Masukkan jumlah suku: 12
+ list_fib = []
+ for i in range(n):
+     deret.append(fibonacci(i)) #simpan hasil ke list 
+
+ print("Deret Fibonacci")
+ Deret Fibonacci
+print:(deret)
+(0,1,1,2,3,5,8,13,21,34,55,89)
+
+
+#Buat Fungsi baru untuk mencari bilangan prima antara 1-N
+ def is_prima(n):
+     if n <= 1:
+            return False
+     for i in range(2, int(n**0.5) + 1)
+            if n% i == 0:
+              return False
+     return True 
+def cari_prima(N):
+       daftar_prima = [ ] 
+       for i in range(2, N + 1):
+             if is_prima(i):
+                 daftar.prima_append(i)
+       return daftar_prima
+
+N = int(input("Masukkan batas bilangan:"))
+Masukkan batas bilangan:15
+prima = cari_prima(N)
+print(f"bilangan prima antara 1 dan {N}:",prima)
+bilangan prima antara 1 dan 15:[2,3,5,7,11,13]
+ 
+
+#Buat grafik perbandingan antara fungsi linear dan fungsi kuadrat menggunakan matplotlib
+ import numpy as np
+ import matplotlib.pyplot as plt
+
+ def f_linear(x): return 5*x + 2
+
+ def f_kuadrat(x): return 10*x**2 + 2*x + 4
+
+ x = np.linspace (-5, 5, 100)
+
+ plt.plot(x, f_linear(x), label= "Linear: 6*x + 2")
+[<matplotlib.lines. Line2D object at 0x000002354F8BDA50>]
+ plt.plot(x, f_kuadrat(x), label= "Kuadrat:10*x**2 + 2*x + 4")
+[<matplotlib.lines. Line2D object at 0x000002354F8BDF90>]
+ plt.xlabel("y")
+Text(0.5, 0, 'y')
+ plt.ylabel("x")
+Text(0, 0.5, 'x')
+ plt.legend()
+<matplotlib.legend. Legend object at 0x0000023535407D60>
+ plt.grid(True)
+ plt.show()
